@@ -1,4 +1,4 @@
-import API.UserWipeStep;
+import api.UserWipeStep;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import jdk.jfr.Description;
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 import pages.*;
 
-public class AuthorizationTest extends WebDriverSetup {
+public class AuthorizationTest extends BaseTest {
 
  String accessToken;
 

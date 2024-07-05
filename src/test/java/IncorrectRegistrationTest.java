@@ -6,7 +6,7 @@ import pages.LoginPage;
 import pages.MainPage;
 import pages.RegisterPage;
 
-public class IncorrectRegistrationTest extends WebDriverSetup {
+public class IncorrectRegistrationTest extends BaseTest {
 
     @Test
     @DisplayName("Register with short password")

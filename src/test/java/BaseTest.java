@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class WebDriverSetup {
+public class BaseTest {
 
     WebDriver driver;
     //type here what driver to use "Chrome" or "Edge"

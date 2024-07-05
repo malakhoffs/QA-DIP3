@@ -1,4 +1,4 @@
-package API;
+package api;
 
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
@@ -24,14 +24,10 @@ public class UserWipeStep {
     @Step("Deleting user")
     public static void userWipe(String accessToken) {
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
-        if (accessToken != null) {
-            given()
+        given()
                     .baseUri("https://stellarburgers.nomoreparties.site/api/")
                     .header("Content-Type", "application/json")
                     .header("Authorization", accessToken)
                     .delete("auth/user");
-        } else {
-            System.out.println("Something went wrong, nothing to remove");
-        }
     }
 }

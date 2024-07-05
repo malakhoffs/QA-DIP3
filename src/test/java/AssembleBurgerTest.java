@@ -5,7 +5,7 @@ import org.junit.Test;
 import pages.MainPage;
 
 
-public class AssembleBurgerTest extends WebDriverSetup {
+public class AssembleBurgerTest extends BaseTest {
 
     @Test
     @DisplayName("Burger parts scroll")
